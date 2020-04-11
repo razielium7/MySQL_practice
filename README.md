@@ -8,9 +8,9 @@
 
 
 ## Proyecto de Investigación
-![scr1](/img/1.png)
-![scr2](/img/2.png)
-![scr3](/img/3.png)
+![scr1](/img/1i.png)
+![scr2](/img/2i.png)
+![scr3](/img/3i.png)
 
 
 ## Naves Espaciales
