@@ -8,6 +8,7 @@ Link: ["Naves Espaciales"](https://github.com/davidgchaves/first-steps-with-git-
 
 - [Proyecto de Investigación](#proyecto-de-investigación)
 - [Naves Espaciales](#naves-espaciales)
+- [Pseudo-GUI](https://github.com/razielium7/MySQL_practice/blob/master/pseudo_gui.md)
 
 
 ## Proyecto de Investigación
@@ -17,3 +18,6 @@ Link: ["Naves Espaciales"](https://github.com/davidgchaves/first-steps-with-git-
 
 
 ## Naves Espaciales
+![scr1](/img/1n.png)
+![scr2](/img/2n.png)
+![scr3](/img/3n.png)
