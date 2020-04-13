@@ -25,6 +25,8 @@ Link: ["MySQL Reference Manual SHOW STATEMENTS"](https://dev.mysql.com/doc/refma
     - [PLUGINS](#show-PLUGINS)
     - [TRIGGERS](#show-TRIGGERS)
     - [EVENTS](#show-EVENTS)
+-Inspección de DATOS en tablas
+    - [SELECT](#select)
 
 #### SHOW DATABASES
 Comando para listar las bases de datos o esquemas existentes.
@@ -227,6 +229,18 @@ SHOW EVENTS
 ```
 ![scr1](/img2/15.PNG)
 
+
+#### SELECT
+Magnífoco comando usado para consultar toda clase de datos.
+Gracias a él podemos inspeccionar los datos almacenados en los campos de las tablas.
+Para mas información Link: [DQL Cheatsheet](https://github.com/razielium7/SQL-DQL/blob/master/DQLapuntes.md)
+
+```sql
+SELECT  *
+    FROM <nombre_tabla>
+    [LIKE | WHERE];
+```
+![scr1](/img2/select.PNG)
 
 
 - [Volver  a raíz](https://github.com/razielium7/MySQL_practice/blob/master/README.md)
