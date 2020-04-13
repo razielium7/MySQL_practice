@@ -25,7 +25,7 @@ Link: ["MySQL Reference Manual SHOW STATEMENTS"](https://dev.mysql.com/doc/refma
     - [PLUGINS](#show-PLUGINS)
     - [TRIGGERS](#show-TRIGGERS)
     - [EVENTS](#show-EVENTS)
--Inspección de DATOS en tablas
+- Inspección de DATOS en tablas
     - [SELECT](#select)
 
 #### SHOW DATABASES
