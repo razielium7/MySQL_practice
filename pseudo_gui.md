@@ -75,8 +75,7 @@ Los campos mostrados son:
 SHOW COLUMNS es semejante a DESCRIBE COLUMNS:
 
 ```sql
-DESCRIBE COLUMNS
-    FROM <nombre_tabla>;
+DESCRIBE <nombre_tabla>;
 ```
 
 ![scr1](/img2/3.PNG)
