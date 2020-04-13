@@ -18,7 +18,7 @@ Link: ["MySQL Reference Manual SHOW STATEMENTS"](https://dev.mysql.com/doc/refma
     - [STATUS](#show-STATUS)
     - [PROFILE](#show-PROFILE)
     - [INDEX](#show-INDEX)
-    - [LOGS](#show-LOGS)
+    - [LOGS](#show-BINARY-LOGS)
 - Inspección de avisos y errores
     - [WARNINGS](#show-WARNINGS)
     - [ERRORS](#show-ERRORS)
