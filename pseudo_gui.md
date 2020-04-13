@@ -18,7 +18,6 @@ Link: ["MySQL Reference Manual SHOW STATEMENTS"](https://dev.mysql.com/doc/refma
     - [STATUS](#show-STATUS)
     - [PROFILE](#show-PROFILE)
     - [INDEX](#show-INDEX)
-    - [LOGS](#show-BINARY-LOGS)
 - Inspección de avisos y errores
     - [WARNINGS](#show-WARNINGS)
     - [ERRORS](#show-ERRORS)
@@ -36,7 +35,7 @@ SHOW {DATABASES | SCHEMAS}
     [LIKE | WHERE];
 ```
 
-![scr1](/img2/databases.png)
+![scr1](/img2/1.png)
 
 
 #### SHOW TABLES 
@@ -48,7 +47,7 @@ SHOW  TABLES
     [LIKE | WHERE];
 ```
 
-![scr1](/img2/.png)
+![scr1](/img2/2.png)
 
 #### SHOW COLUMNS
 Comando que muestra la informacion sobre columnas en una tabla dada. 
@@ -78,8 +77,8 @@ DESCRIBE COLUMNS
     FROM <nombre_tabla>;
 ```
 
-![scr1](/img2/.png)
-
+![scr1](/img2/3.png)
+![scr1](/img2/3_5.png)
 
 
 #### SHOW CHARACTER SET
@@ -89,7 +88,7 @@ Muestra nombre de charset, descripción breve, collation por defecto, maximo nú
 SHOW CHARACTER SET
     [LIKE | WHERE];
 ```
-![scr1](/img2/.png)
+![scr1](/img2/4.png)
 
 #### SHOW COLLATION
 Comando que lista los collation (coonjunto de reglas para tratar caracteres  UNICODE y non-UNICODE).
@@ -99,7 +98,7 @@ Muestra nombre, charset asociado, id, si está habilitado por defecto, si esta c
 SHOW COLLATION
     [LIKE | WHERE];
 ```
-![scr1](/img2/.png)
+![scr1](/img2/5.png)
 
 
 
@@ -109,7 +108,7 @@ Comando que muestra la lista de los privilegios soportados por el servidor
 SHOW PRIVILEGES;
 ```
 
-![scr1](/img2/.png)
+![scr1](/img2/6.png)
 
 #### SHOW GRANTS
 Comando que muestra los privilegios asignados a un usuario concreto.
@@ -117,8 +116,14 @@ Comando que muestra los privilegios asignados a un usuario concreto.
 SHOW GRANTS
     [FOR <usuario>];
 ```
-
-![scr1](/img2/.png)
+***Nota! A partir de v.8.0 el comando no muestra todos losprivilegios.***
+Otra forma de visualizar los privilegios es:
+```sql
+SELECT * 
+   FROM mysql.user \G;
+```
+***\G*** cambia la forma de visualizar y lo hace mas legible.
+![scr1](/img2/7.png)
 
 
 #### SHOW STATUS
@@ -128,12 +133,15 @@ GLOBAL/SESSION permite elegir si mostrar el estado general o de la sesion actual
 SHOW [GLOBAL | SESSION] STATUS
     [LIKE | WHERE];
 ```
-![scr1](/img2/.png)
+![scr1](/img2/8.png)
 
 #### SHOW PROFILE
 Comando que muestra muestra el consumo de recursos para el comando ejecutado durante la sesión actual.
 Podemos especificar que tipo de recurso deseamos monitorizar(type), que comandos trackear, limitar la cantidad de resultados.
+Para inspeccionar profile primero se debe habilitar.
 ```sql
+SET profiling = 1;
+
 SHOW PROFILE [type [, type] ... ]
     [FOR QUERY n]
     [LIMIT row_count [offset]];
@@ -150,7 +158,7 @@ type: {
   | SWAPS
 }
 ```
-![scr1](/img2/.png)
+![scr1](/img2/9.png)
 
 
 #### SHOW INDEX
@@ -158,24 +166,13 @@ Comando que muestra la indexación de una tabla. La indexación es una estructur
 El comando es útil para trabajar sobre la optimización de velocidades de operaciones. 
 Como algunos otros STATEMENTS tambien dota de predicado.
 ```sql
-SHOW [EXTENDED] INDEX
+SHOW INDEX
     FROM <nombre_tabla>
     [WHERE];
 ```
 
-![scr1](/img2/.png)
+![scr1](/img2/10.png)
 
-
-
-#### SHOW BINARY LOGS
-Comando que muestra los logs de la base de datos. Un log es una lista en la cual están almacenados todos los cambios efectuados a la BD.
-Pueden ser replicados, purificados(borrados) etc. Son esenciales para backups.
-El comando muestra los logs existentes, su tamaño y si estan encriptados.
-```sql
-SHOW BINARY LOGS;
-```
-
-![scr1](/img2/.png)
 
 
 
@@ -185,7 +182,7 @@ Comando utilizado para diagnóstico del sistema que muestra los avisos del siste
 SHOW WARNINGS [COUNT(*)];
 ```
 
-![scr1](/img2/.png)
+![scr1](/img2/11.png)
 
 
 #### SHOW ERRORS
@@ -196,7 +193,7 @@ SHOW ERRORS [LIMIT [offset,] row_count];
 
 SHOW COUNT(*) ERRORS;
 ```
-![scr1](/img2/.png)
+![scr1](/img2/12.png)
 
 
 #### SHOW PLUGINS 
@@ -205,7 +202,7 @@ Comando que lista los plugins existentes en el servidor, su nombre, estado, tipo
 SHOW PLUGINS;
 ```
 
-![scr1](/img2/.png)
+![scr1](/img2/13.png)
 
 
 
@@ -216,7 +213,7 @@ SHOW TRIGGERS
     [LIKE | WHERE];
 ```
 
-![scr1](/img2/.png)
+![scr1](/img2/14.png)
 
 
 
@@ -227,14 +224,7 @@ Muestra nombre de BD, nombre del evento, cuenta causante del evento, zona horari
 SHOW EVENTS
     [LIKE | WHERE];
 ```
-![scr1](/img2/.png)
-
-
-
-
-
-
-
+![scr1](/img2/15.png)
 
 
 
