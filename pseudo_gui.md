@@ -35,7 +35,7 @@ SHOW {DATABASES | SCHEMAS}
     [LIKE | WHERE];
 ```
 
-![scr1](/img2/1.png)
+![scr1](/img2/1.PNG)
 
 
 #### SHOW TABLES 
