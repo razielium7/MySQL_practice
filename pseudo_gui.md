@@ -116,13 +116,14 @@ Comando que muestra los privilegios asignados a un usuario concreto.
 SHOW GRANTS
     [FOR <usuario>];
 ```
-***Nota! A partir de v.8.0 el comando no muestra todos losprivilegios.***
+***Nota! A partir de v.8.0 el comando no muestra todos los privilegios.***
 Otra forma de visualizar los privilegios es:
 ```sql
 SELECT * 
    FROM mysql.user \G;
 ```
 ***\G*** cambia la forma de visualizar y lo hace mas legible.
+
 ![scr1](/img2/7.PNG)
 
 
