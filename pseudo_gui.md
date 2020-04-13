@@ -231,7 +231,7 @@ SHOW EVENTS
 
 
 #### SELECT
-Magnífoco comando usado para consultar toda clase de datos.
+Magnífico comando usado para consultar toda clase de datos.
 Gracias a él podemos inspeccionar los datos almacenados en los campos de las tablas.
 Para mas información Link: [DQL Cheatsheet](https://github.com/razielium7/SQL-DQL/blob/master/DQLapuntes.md)
 
