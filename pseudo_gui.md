@@ -47,7 +47,7 @@ SHOW  TABLES
     [LIKE | WHERE];
 ```
 
-![scr1](/img2/2.png)
+![scr1](/img2/2.PNG)
 
 #### SHOW COLUMNS
 Comando que muestra la informacion sobre columnas en una tabla dada. 
@@ -77,8 +77,8 @@ DESCRIBE COLUMNS
     FROM <nombre_tabla>;
 ```
 
-![scr1](/img2/3.png)
-![scr1](/img2/3_5.png)
+![scr1](/img2/3.PNG)
+![scr1](/img2/3_5.PNG)
 
 
 #### SHOW CHARACTER SET
@@ -88,7 +88,7 @@ Muestra nombre de charset, descripción breve, collation por defecto, maximo nú
 SHOW CHARACTER SET
     [LIKE | WHERE];
 ```
-![scr1](/img2/4.png)
+![scr1](/img2/4.PNG)
 
 #### SHOW COLLATION
 Comando que lista los collation (coonjunto de reglas para tratar caracteres  UNICODE y non-UNICODE).
@@ -98,7 +98,7 @@ Muestra nombre, charset asociado, id, si está habilitado por defecto, si esta c
 SHOW COLLATION
     [LIKE | WHERE];
 ```
-![scr1](/img2/5.png)
+![scr1](/img2/5.PNG)
 
 
 
@@ -108,7 +108,7 @@ Comando que muestra la lista de los privilegios soportados por el servidor
 SHOW PRIVILEGES;
 ```
 
-![scr1](/img2/6.png)
+![scr1](/img2/6.PNG)
 
 #### SHOW GRANTS
 Comando que muestra los privilegios asignados a un usuario concreto.
@@ -123,7 +123,7 @@ SELECT *
    FROM mysql.user \G;
 ```
 ***\G*** cambia la forma de visualizar y lo hace mas legible.
-![scr1](/img2/7.png)
+![scr1](/img2/7.PNG)
 
 
 #### SHOW STATUS
@@ -133,7 +133,7 @@ GLOBAL/SESSION permite elegir si mostrar el estado general o de la sesion actual
 SHOW [GLOBAL | SESSION] STATUS
     [LIKE | WHERE];
 ```
-![scr1](/img2/8.png)
+![scr1](/img2/8.PNG)
 
 #### SHOW PROFILE
 Comando que muestra muestra el consumo de recursos para el comando ejecutado durante la sesión actual.
@@ -158,7 +158,7 @@ type: {
   | SWAPS
 }
 ```
-![scr1](/img2/9.png)
+![scr1](/img2/9.PNG)
 
 
 #### SHOW INDEX
@@ -171,7 +171,7 @@ SHOW INDEX
     [WHERE];
 ```
 
-![scr1](/img2/10.png)
+![scr1](/img2/10.PNG)
 
 
 
@@ -182,7 +182,7 @@ Comando utilizado para diagnóstico del sistema que muestra los avisos del siste
 SHOW WARNINGS [COUNT(*)];
 ```
 
-![scr1](/img2/11.png)
+![scr1](/img2/11.PNG)
 
 
 #### SHOW ERRORS
@@ -193,7 +193,7 @@ SHOW ERRORS [LIMIT [offset,] row_count];
 
 SHOW COUNT(*) ERRORS;
 ```
-![scr1](/img2/12.png)
+![scr1](/img2/12.PNG)
 
 
 #### SHOW PLUGINS 
@@ -202,7 +202,7 @@ Comando que lista los plugins existentes en el servidor, su nombre, estado, tipo
 SHOW PLUGINS;
 ```
 
-![scr1](/img2/13.png)
+![scr1](/img2/13.PNG)
 
 
 
@@ -213,7 +213,7 @@ SHOW TRIGGERS
     [LIKE | WHERE];
 ```
 
-![scr1](/img2/14.png)
+![scr1](/img2/14.PNG)
 
 
 
@@ -224,7 +224,7 @@ Muestra nombre de BD, nombre del evento, cuenta causante del evento, zona horari
 SHOW EVENTS
     [LIKE | WHERE];
 ```
-![scr1](/img2/15.png)
+![scr1](/img2/15.PNG)
 
 
 
